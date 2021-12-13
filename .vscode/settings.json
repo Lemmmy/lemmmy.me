@@ -1,0 +1,18 @@
+{
+  "cSpell.enabled": true,
+  "cSpell.words": [
+    "bandcamp",
+    "bottomright",
+    "HYPNAGOGIA",
+    "Kani",
+    "kanjischool",
+    "Osusig",
+    "RECAPTCHA",
+    "semibold",
+    "sitekey",
+    "soundcloud",
+    "Tracklist",
+    "Wani"
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
