@@ -20,10 +20,10 @@ const Home: NextPage = () => {
     {/* CANT SLEEP EP */}
     <SectionMusicRelease
       title="CANT SLEEP" type="ep"
-      videoId="pdRXuGCk8lo" releaseDate="2021-12-17"
+      videoId="pdRXuGCk8lo" releaseDate="2021-12-17" released
       className="bg-[#414059]" dark
       bgImage="/img/cant-sleep-bg.jpg"
-      get="https://distrokid.com/hyperfollow/lemmmy/cant-sleep"
+      get="https://ffm.to/cant-sleep.owe"
       tracks={[
         { name: "WAKE UP (INTRO)", duration: 36 },
         { name: "CANT SLEEP", duration: 282 },

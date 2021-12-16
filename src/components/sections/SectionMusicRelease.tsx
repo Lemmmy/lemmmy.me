@@ -13,6 +13,7 @@ export interface MusicReleaseProps extends SectionProps {
   type: MusicReleaseType;
   title: string;
   releaseDate: string;
+  released?: boolean;
   description: ReactNode;
 
   videoId?: string;
@@ -29,13 +30,14 @@ export function SectionMusicRelease({
   type,
   title,
   releaseDate,
+  released,
   description,
   videoId,
   get,
   tracks,
   ...props
 }: MusicReleaseProps): JSX.Element {
-  const releaseFuture = dateInFuture(releaseDate);
+  const releaseFuture = !released && dateInFuture(releaseDate);
 
   return <Section
     title={<div className="flex flex-col md:flex-row items-center gap-2 md:gap-0">
