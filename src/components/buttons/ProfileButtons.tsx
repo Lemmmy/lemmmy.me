@@ -2,7 +2,7 @@ import { ProfileButton, ProfileButtonProps } from "./ProfileButton";
 
 import {
   SpotifyIconSvg, AppleMusicIconSvg, BandcampIconSvg, SoundcloudIconSvg,
-  GitHubLogoIconSvg, TmpimIconSvg, TwitterIconSvg, PayPalIconSvg
+  GitHubLogoIconSvg, TmpimIconSvg, TwitterIconSvg, PayPalIconSvg, TwitchIconSvg
 } from "./Icons";
 
 type Props = Omit<ProfileButtonProps, "name">;
@@ -62,3 +62,11 @@ export const ButtonPayPal = (props: Props): JSX.Element => <ProfileButton
   icon={<PayPalIconSvg />}
   {...props}
 />;
+
+export const ButtonTwitch = (props: Props): JSX.Element => <ProfileButton
+  name="twitch"
+  bg="bg-twitch-logo"
+  icon={<TwitchIconSvg />}
+  {...props}
+/>;
+

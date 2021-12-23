@@ -35,6 +35,7 @@ module.exports = {
         "tmpim-logo": "#000000",
         "twitter-logo": "#1DA1F2",
         "paypal-logo": "#FFFFFF",
+        "twitch-logo": "#9146FF",
 
         "osusig": "#BB1177",
         "osusig-hover": "#EC31A2",
