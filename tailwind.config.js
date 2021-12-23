@@ -36,6 +36,7 @@ module.exports = {
         "twitter-logo": "#1DA1F2",
         "paypal-logo": "#FFFFFF",
         "twitch-logo": "#9146FF",
+        "youtube-logo": "#FF0000",
 
         "osusig": "#BB1177",
         "osusig-hover": "#EC31A2",

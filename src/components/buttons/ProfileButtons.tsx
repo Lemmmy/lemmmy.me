@@ -1,8 +1,10 @@
+import Image from "next/image";
+
 import { ProfileButton, ProfileButtonProps } from "./ProfileButton";
 
 import {
   SpotifyIconSvg, AppleMusicIconSvg, BandcampIconSvg, SoundcloudIconSvg,
-  GitHubLogoIconSvg, TmpimIconSvg, TwitterIconSvg, PayPalIconSvg, TwitchIconSvg
+  GitHubLogoIconSvg, TmpimIconSvg, TwitterIconSvg, PayPalIconSvg, TwitchIconSvg, YouTubeIconSvg
 } from "./Icons";
 
 type Props = Omit<ProfileButtonProps, "name">;
@@ -69,4 +71,20 @@ export const ButtonTwitch = (props: Props): JSX.Element => <ProfileButton
   icon={<TwitchIconSvg />}
   {...props}
 />;
+
+export const ButtonYouTube = (props: Props): JSX.Element => <ProfileButton
+  name="youtube"
+  bg="bg-youtube-logo"
+  icon={<YouTubeIconSvg />}
+  {...props}
+/>;
+
+export const ButtonDeezer = (props: Props): JSX.Element => <ProfileButton
+  name="deezer"
+  bg="bg-deezer-logo"
+  className="overflow-hidden"
+  icon={<Image src="/img/deezer.png" width={64} height={64} alt="Deezer" />}
+  {...props}
+/>;
+
 
