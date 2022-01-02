@@ -17,6 +17,17 @@ const Home: NextPage = () => {
     <SectionHead />
 
     <SectionMusic />
+    {/* PATTERN 127 */}
+    <SectionMusicRelease
+      title="PATTERN 127" type="single"
+      videoId="YO3S8inHU8Q" releaseDate="2022-01-07"
+      className="bg-[#e14f51]" dark
+      bgImage="/img/pattern-127-bg.jpg"
+      get="https://distrokid.com/hyperfollow/lemmmy/pattern-127"
+      tracks={[
+        { name: "PATTERN 127", duration: 292 },
+      ]}
+    />
     {/* CANT SLEEP EP */}
     <SectionMusicRelease
       title="CANT SLEEP" type="ep"

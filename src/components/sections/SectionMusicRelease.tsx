@@ -14,7 +14,7 @@ export interface MusicReleaseProps extends SectionProps {
   title: string;
   releaseDate: string;
   released?: boolean;
-  description: ReactNode;
+  description?: ReactNode;
 
   videoId?: string;
   get?: string;
