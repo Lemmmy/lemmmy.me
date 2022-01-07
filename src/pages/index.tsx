@@ -20,10 +20,10 @@ const Home: NextPage = () => {
     {/* PATTERN 127 */}
     <SectionMusicRelease
       title="PATTERN 127" type="single"
-      videoId="YO3S8inHU8Q" releaseDate="2022-01-07"
+      videoId="YO3S8inHU8Q" releaseDate="2022-01-07" released
       className="bg-[#e14f51]" dark
       bgImage="/img/pattern-127-bg.jpg"
-      get="https://distrokid.com/hyperfollow/lemmmy/pattern-127"
+      get="https://ffm.to/pattern127.owe"
       tracks={[
         { name: "PATTERN 127", duration: 292 },
       ]}
