@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import Image from "next/image";
 
 import { Section, SectionProps } from "./Section";
 import { YoutubeEmbed } from "../music/YoutubeEmbed";
@@ -17,6 +18,7 @@ export interface MusicReleaseProps extends SectionProps {
   description?: ReactNode;
 
   videoId?: string;
+  cover?: string;
   get?: string;
   tracks?: Track[];
 }
@@ -33,6 +35,7 @@ export function SectionMusicRelease({
   released,
   description,
   videoId,
+  cover,
   get,
   tracks,
   ...props
@@ -60,6 +63,16 @@ export function SectionMusicRelease({
       {/* Demo video, if available */}
       {videoId &&
         <YoutubeEmbed videoId={videoId} title={title} className="flex-1" />}
+      {/* Otherwise, cover, if available */}
+      {cover && <div
+        className="rounded-md shadow-lg overflow-hidden w-[300px] h-[300px]"
+      >
+        <Image
+          src={cover}
+          width={300} height={300}
+          alt={title + " cover"}
+        />
+      </div>}
 
       {/* Info area */}
       <div className="flex-1">
