@@ -20,7 +20,8 @@ const Home: NextPage = () => {
     {/* HYPNAGOGIA (lethargic ver.) */}
     <SectionMusicRelease
       title="HYPNAGOGIA (lethargic ver.)" type="single"
-      cover="/img/hypnagogia-lethargic-cover.jpg" releaseDate="2022-01-18"
+      cover="/img/hypnagogia-lethargic-cover.jpg"
+      releaseDate="2022-01-18" released
       className="bg-[#6b49a7]" dark
       bgImage="/img/hypnagogia-lethargic-bg.jpg"
       get="https://ffm.to/hypnagogia-lethargic.owe"
