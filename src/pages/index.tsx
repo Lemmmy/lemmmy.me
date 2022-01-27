@@ -17,6 +17,18 @@ const Home: NextPage = () => {
     <SectionHead />
 
     <SectionMusic />
+    {/* refill */}
+    <SectionMusicRelease
+      title="refill" type="single"
+      cover="/img/refill-cover.jpg"
+      releaseDate="2022-01-28" released
+      className="bg-[#34688b]" dark
+      bgImage="/img/refill-bg.jpg"
+      get="https://ffm.to/refill.owe"
+      tracks={[
+        { name: "refill", duration: 432 },
+      ]}
+    />
     {/* HYPNAGOGIA (lethargic ver.) */}
     <SectionMusicRelease
       title="HYPNAGOGIA (lethargic ver.)" type="single"
