@@ -70,9 +70,9 @@ const Home: NextPage = () => {
     />
 
     <SectionProgramming />
-    <SectionOsusig />
-    <SectionKristWeb />
     <SectionKanjiSchool />
+    <SectionKristWeb />
+    <SectionOsusig />
 
     <SectionSocials />
   </div>;

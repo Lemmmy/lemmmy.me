@@ -4,6 +4,8 @@ import Image from "next/image";
 import { Section, SectionTitle } from "./Section";
 
 import { PlainLink } from "../buttons/PlainLink";
+import { ButtonRow, Button } from "../buttons/Button";
+import { ButtonProjectGitHub } from "../buttons/ButtonProjectGitHub";
 
 import image from "../../../public/img/kanjischool.png";
 
@@ -18,11 +20,26 @@ export function SectionKanjiSchool(): JSX.Element {
         <SectionTitle>KanjiSchool</SectionTitle>
 
         <p className="mb-4">
-          experimental custom web client for <PlainLink dark external href="https://wanikani.com">WaniKani</PlainLink>,
-          a spaced repetition system for learning Japanese kanji
+          custom web client for <PlainLink dark external href="https://wanikani.com">WaniKani</PlainLink>,
+          a spaced repetition system for learning Japanese kanji. written in React and TypeScript
         </p>
 
-        <span className="opacity-50 italic">coming soon</span>
+        <ButtonRow>
+          <Button
+            href="https://kanji.school/" external
+            bg="bg-neutral-800 hover:bg-neutral-700"
+            textClass="text-white"
+          >
+            Visit
+          </Button>
+
+          <ButtonProjectGitHub
+            project="Lemmmy/KanjiSchool"
+            bg="bg-neutral-900 hover:bg-neutral-800"
+            textClass="text-white"
+            dark
+          />
+        </ButtonRow>
       </div>
 
       {/* Image */}
