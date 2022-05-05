@@ -17,6 +17,25 @@ const Home: NextPage = () => {
     <SectionHead />
 
     <SectionMusic />
+    {/* Searching */}
+    <SectionMusicRelease
+      title="Searching" type="album"
+      cover="/img/searching-cover.jpg"
+      releaseDate="2022-05-06" released
+      className="bg-[#1c3463]" dark
+      bgImage="/img/searching-bg.jpg"
+      get="https://lem.sh/searching.owe"
+      tracks={[
+        { name: "Searching (intro)", duration: 136 },
+        { name: "Library of indexes", duration: 298 },
+        { name: "deconstruct(or)", duration: 302 },
+        { name: "refill (dnb mix)", duration: 291 },
+        { name: "Antithesis (Interlude)", duration: 261 },
+        { name: "lost+found", duration: 246 },
+        { name: "Phaseless world", duration: 317 },
+        { name: "Follow endlessly", duration: 215 },
+      ]}
+    />
     {/* refill */}
     <SectionMusicRelease
       title="refill" type="single"
