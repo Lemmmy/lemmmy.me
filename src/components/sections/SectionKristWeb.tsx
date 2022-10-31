@@ -30,7 +30,7 @@ export function SectionKristWeb(): JSX.Element {
       {/* Description */}
       <div className="flex-1">
         <p className="mb-4">
-          web wallet for <PlainLink dark external href="https://krist.ceriat.net">Krist</PlainLink>,
+          web wallet for <PlainLink dark external href="https://krist.dev">Krist</PlainLink>,
           an in-game currency for <PlainLink dark external href="https://computercraft.cc">ComputerCraft</PlainLink>
         </p>
 
