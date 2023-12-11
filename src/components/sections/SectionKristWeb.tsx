@@ -19,7 +19,7 @@ export function SectionKristWeb(): JSX.Element {
       {/* Image */}
       <Image
         src={image}
-        width={640} height={360}
+        width={640} height={318}
         alt="KristWeb"
         className={classNames(
           "rounded-md shadow-lg overflow-hidden max-w-screen-sm",
@@ -31,7 +31,13 @@ export function SectionKristWeb(): JSX.Element {
       <div className="flex-1">
         <p className="mb-4">
           web wallet for <PlainLink dark external href="https://krist.dev">Krist</PlainLink>,
-          an in-game currency for <PlainLink dark external href="https://computercraft.cc">ComputerCraft</PlainLink>
+          a centralized-database economy system for Minecraft servers, serving as an in-game currency system
+          for <PlainLink dark external href="https://computercraft.cc">ComputerCraft</PlainLink>
+        </p>
+
+        <p className="mb-4 opacity-75 text-sm">
+          disclaimer: Krist does not use a block-chain, or any similar technology. Krist is not
+          a &quot;cryptocurrency&quot;.
         </p>
 
         <ButtonRow>

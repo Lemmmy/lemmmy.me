@@ -45,7 +45,7 @@ export function SectionKanjiSchool(): JSX.Element {
       {/* Image */}
       <Image
         src={image}
-        width={640} height={360}
+        width={640} height={291}
         alt="KanjiSchool"
         className={classNames(
           "rounded-md shadow-lg overflow-hidden max-w-screen-sm",

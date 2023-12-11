@@ -1,6 +1,6 @@
 import { Section } from "./Section";
 
-import { ButtonTwitter, ButtonPayPal, ButtonTwitch, ButtonYouTube } from "../buttons/ProfileButtons";
+import { ButtonPayPal, ButtonTwitch, ButtonYouTube } from "../buttons/ProfileButtons";
 import { ProfileButtonBox } from "../buttons/ProfileButton";
 import { ButtonEmail } from "../buttons/ButtonEmail";
 
