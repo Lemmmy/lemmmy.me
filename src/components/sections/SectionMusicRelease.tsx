@@ -9,7 +9,7 @@ import { MusicReleaseType, MusicReleaseTypeBadge } from "../music/MusicReleaseTy
 import { Button } from "../buttons/Button";
 import { dateInFuture } from "../../utils";
 import { formatHmsDuration } from "../util";
-import { DownloadIconSvg } from "../buttons/Icons";
+import { ButtonDownload } from "../buttons/ButtonDownload";
 
 export interface MusicReleaseProps extends SectionProps {
   type: MusicReleaseType;
@@ -116,10 +116,9 @@ export function SectionMusicRelease({
           </Button>}
 
           {/* Direct download button */}
-          {rawDlPath && <Button href={rawDlPath} external>
-            <DownloadIconSvg className="w-4 h-4 mr-2" />
+          {rawDlPath && <ButtonDownload href={rawDlPath} external>
             Direct download (.wav)
-          </Button>}
+          </ButtonDownload>}
 
           {/* Release date */}
           <span className="opacity-75 lowercase whitespace-nowrap">
