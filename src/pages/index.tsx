@@ -25,6 +25,7 @@ const Home: NextPage = () => {
       className="bg-[#1c3463]" dark
       bgImage="/img/searching-bg.jpg"
       get="https://lem.sh/searching.owe"
+      dlPath="2022-05-06 Searching"
       tracks={[
         { name: "Searching (intro)", duration: 136 },
         { name: "Library of indexes", duration: 298 },
@@ -44,6 +45,7 @@ const Home: NextPage = () => {
       className="bg-[#34688b]" dark
       bgImage="/img/refill-bg.jpg"
       get="https://ffm.to/refill.owe"
+      dlPath="2022-01-28 refill"
       tracks={[
         { name: "refill", duration: 432 },
       ]}
@@ -56,6 +58,7 @@ const Home: NextPage = () => {
       className="bg-[#6b49a7]" dark
       bgImage="/img/hypnagogia-lethargic-bg.jpg"
       get="https://ffm.to/hypnagogia-lethargic.owe"
+      dlPath="2022-01-18 HYPNAGOGIA (LETHARGIC VER.)"
       tracks={[
         { name: "HYPNAGOGIA (lethargic ver.)", duration: 352 },
       ]}
@@ -67,6 +70,7 @@ const Home: NextPage = () => {
       className="bg-[#e14f51]" dark
       bgImage="/img/pattern-127-bg.jpg"
       get="https://ffm.to/pattern127.owe"
+      dlPath="2022-01-07 PATTERN 127"
       tracks={[
         { name: "PATTERN 127", duration: 292 },
       ]}
@@ -78,6 +82,7 @@ const Home: NextPage = () => {
       className="bg-[#414059]" dark
       bgImage="/img/cant-sleep-bg.jpg"
       get="https://ffm.to/cant-sleep.owe"
+      dlPath="2021-12-17 CANT SLEEP EP"
       tracks={[
         { name: "WAKE UP (INTRO)", duration: 36 },
         { name: "CANT SLEEP", duration: 282 },

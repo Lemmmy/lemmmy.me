@@ -1,4 +1,4 @@
-import { FC, HTMLProps } from "react";
+import { FC, HTMLProps, ReactNode } from "react";
 import classNames from "classnames";
 
 export interface ButtonProps extends HTMLProps<HTMLAnchorElement> {
@@ -49,8 +49,13 @@ export const Button: FC<ButtonProps> = ({
   </a>;
 };
 
-export const ButtonRow: FC = ({ children }) => {
-  return <div className="flex flex-col md:flex-row gap-2">
+interface ButtonRowProps {
+  className?: string;
+  children?: ReactNode;
+}
+
+export function ButtonRow({ children, className }: ButtonRowProps): JSX.Element {
+  return <div className={classNames("flex flex-col md:flex-row gap-2", className)}>
     {children}
   </div>;
-};
+}

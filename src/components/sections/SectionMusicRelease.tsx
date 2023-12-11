@@ -7,8 +7,9 @@ import { YoutubeEmbed } from "../music/YoutubeEmbed";
 import { MusicReleaseType, MusicReleaseTypeBadge } from "../music/MusicReleaseTypeBadge";
 
 import { Button } from "../buttons/Button";
-import { dateInFuture } from "../../utils/dateInFuture";
+import { dateInFuture } from "../../utils";
 import { formatHmsDuration } from "../util";
+import { DownloadIconSvg } from "../buttons/Icons";
 
 export interface MusicReleaseProps extends SectionProps {
   type: MusicReleaseType;
@@ -18,6 +19,8 @@ export interface MusicReleaseProps extends SectionProps {
   description?: ReactNode;
 
   videoId?: string;
+  dlPath?: string;
+  rawDlPath?: string;
   cover?: string;
   get?: string;
   tracks?: Track[];
@@ -35,6 +38,8 @@ export function SectionMusicRelease({
   released,
   description,
   videoId,
+  dlPath,
+  rawDlPath = dlPath ? `https://music.lemmmy.me/${encodeURIComponent(dlPath)}` : undefined,
   cover,
   get,
   tracks,
@@ -104,14 +109,20 @@ export function SectionMusicRelease({
         </div>}
 
         {/* Get/pre-save button + release date */}
-        <div className="flex flex-col md:flex-row gap-2 md:gap-4 items-center">
+        <div className="flex flex-col flex-wrap md:flex-row gap-2 md:gap-4 items-center">
           {/* Get/pre-save button */}
           {get && <Button href={get} external>
             {releaseFuture ? "Pre-save now" : "Stream / download"}
           </Button>}
 
+          {/* Direct download button */}
+          {rawDlPath && <Button href={rawDlPath} external>
+            <DownloadIconSvg className="w-4 h-4 mr-2" />
+            Direct download (.wav)
+          </Button>}
+
           {/* Release date */}
-          <span className="opacity-75 lowercase">
+          <span className="opacity-75 lowercase whitespace-nowrap">
             {releaseFuture !== undefined
               ? (releaseFuture ? "Releases " : "Released ")
               : undefined}
