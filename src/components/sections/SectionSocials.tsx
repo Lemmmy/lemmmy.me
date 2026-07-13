@@ -1,8 +1,7 @@
 import { Section } from "./Section";
 
-import { ButtonPayPal, ButtonTwitch, ButtonYouTube } from "../buttons/ProfileButtons";
+import { ButtonTwitch, ButtonYouTube } from "../buttons/ProfileButtons";
 import { ProfileButtonBox } from "../buttons/ProfileButton";
-import { ButtonEmail } from "../buttons/ButtonEmail";
 
 export function SectionSocials(): JSX.Element {
   return <Section
@@ -13,8 +12,8 @@ export function SectionSocials(): JSX.Element {
     <ProfileButtonBox>
       <ButtonYouTube href="https://www.youtube.com/channel/UCbdhZc7adn0F3lwJd_TsbQA" />
       <ButtonTwitch href="https://twitch.tv/lemmmy_" />
-      <ButtonPayPal href="https://paypal.me/lemmmy" />
-      <ButtonEmail />
+      {/* <ButtonPayPal href="https://paypal.me/lemmmy" /> */}
+      {/* <ButtonEmail /> */}
     </ProfileButtonBox>
   </Section>;
 }
